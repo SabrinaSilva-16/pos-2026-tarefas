@@ -12,7 +12,10 @@ response = requests.post(api_url+"token/pair", json=data)
 token = response.json()["access"]
 print(response.json())
 
-token = ""
+{
+  "password": " ",
+  "username": " "
+}
 
 headers = {
     "Authorization": f'Bearer {token}'
